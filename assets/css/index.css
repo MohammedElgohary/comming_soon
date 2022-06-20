@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: Verdana, sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: zoom 25s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes zoom {
+  0%,
+  100% {
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position-y: 25%;
+  }
+
+  75% {
+    background-position-y: 75%;
+    background-position-x: 75%;
+  }
+}
+
+.container .logo {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  font-size: 1.5rem;
+}
+.container .coming-soon {
+  position: relative;
+  font-size: 5rem;
+  padding: 16px;
+  text-transform: uppercase;
+}
+
+.container .coming-soon::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  background-color: #fff;
+  height: 2px;
+  border-radius: 5px;
+}
+
+.container .coming-soon-text p {
+  font-size: 1.5rem;
+  padding: 16px;
+}
+
+.container .copy-rights {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  font-size: 1.1rem;
+}
