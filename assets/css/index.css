@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("../img/bg2.jpg");
+  background-image: url("../img/bg2.webp");
   background-position: center;
   background-repeat: no-repeat;
   animation: zoom 25s ease-in-out infinite;
