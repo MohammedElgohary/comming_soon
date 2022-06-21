@@ -169,7 +169,7 @@ body::-webkit-scrollbar {
   cursor: pointer;
   border: 0;
   transition: all 0.5s ease-in-out;
-  z-index: 5;
+  z-index: 6;
 }
 
 .signup-overlay #close-signup:hover {
@@ -178,7 +178,8 @@ body::-webkit-scrollbar {
 
 .signup-form {
   padding: 32px;
-  max-width: 500px;
+  max-width: 450px;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -226,6 +227,7 @@ body::-webkit-scrollbar {
   color: #fff;
   font-size: 1.5rem;
   transition: all 0.5s ease-in-out;
+  width: 100%;
 }
 
 .signup-form input:focus {
