@@ -131,15 +131,20 @@ body::-webkit-scrollbar {
 
 #signup-btn {
   padding: 16px 32px;
-  color: #fff;
+  color: #000;
   background-color: transparent;
   font-size: 1rem;
   cursor: pointer;
   border: 0;
-  background-color: #ffffff60;
+  background-color: #ffffff;
   margin-top: 32px;
   border-radius: 32px;
   transition: all 0.5s ease-in-out;
+}
+
+#signup-btn:hover {
+  background-color: #00000050;
+  color: #fff;
 }
 
 .signup-overlay {
@@ -163,9 +168,11 @@ body::-webkit-scrollbar {
   position: absolute;
   top: 32px;
   right: 32px;
-  font-size: 3.5rem;
-  padding: 32px;
+  font-size: 2.5rem;
   color: #fff;
+  background-color: #00000050;
+  padding: 4px 16px;
+  border-radius: 50%;
   cursor: pointer;
   border: 0;
   transition: all 0.5s ease-in-out;
@@ -174,6 +181,7 @@ body::-webkit-scrollbar {
 
 .signup-overlay #close-signup:hover {
   color: red;
+  background-color: #00000099;
 }
 
 .signup-form {
@@ -245,11 +253,6 @@ body::-webkit-scrollbar {
   transition: all 0.5s ease-in-out;
   align-self: baseline;
   margin-top: 16px;
-}
-
-#signup-btn:hover {
-  background-color: #fff;
-  color: #000000;
 }
 
 .container .copy-rights {
