@@ -5,12 +5,15 @@ const overlay = document.querySelector(".signup-overlay"),
 
 audio.autoplay = true;
 audio.loop = true;
+audio.muted = false;
+
 audio.controlsList = "nodownload";
+
 audio.volume = 1;
 
 window.addEventListener("load", () => {
   if (audio.paused) {
-    audio.play();
+    play();
     document.querySelector("#btn-play").innerText = "Pause";
     document.querySelector(".overlay img").style["animation-play-state"] =
       "running";
@@ -24,7 +27,7 @@ window.addEventListener("load", () => {
 
 document.querySelector("#btn-play").addEventListener("click", (e) => {
   if (audio.paused) {
-    audio.play();
+    play();
     e.target.innerText = "Pause";
     document.querySelector(".overlay img").style["animation-play-state"] =
       "running";
@@ -49,3 +52,12 @@ signupCloseBtn.addEventListener("click", () => {
     overlay.classList.remove("open");
   }, 500);
 });
+
+const play = async () => {
+  try {
+    await audio.play();
+  } catch (error) {
+    console.log(error);
+    document.querySelector("#btn-play").innerText = "Join Voice";
+  }
+};
