@@ -110,19 +110,18 @@ body::-webkit-scrollbar {
   height: 2px;
   border-radius: 5px;
 }
-.container .coming-soon p {
-  font-size: 1.5rem;
-  padding: 16px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.3137254902);
-  margin-top: 16px;
-}
 .container .coming-soon-text p {
   font-size: 1.5rem;
   padding: 16px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3137254902);
   margin-top: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.container .coming-soon-text p:hover {
+  letter-spacing: 5px;
+  border-radius: 5px;
 }
 .container #btn-play {
   padding: 16px 32px;
