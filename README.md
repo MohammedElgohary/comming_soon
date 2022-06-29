@@ -4,5 +4,6 @@
 ## Made with:
   * HTML5
   * CSS3
+  * SCSS
   * Javascript `ES6`
   * Love ❤
